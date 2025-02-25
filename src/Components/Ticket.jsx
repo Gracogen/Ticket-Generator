@@ -9,7 +9,9 @@ const Ticket = ({ data }) => {
         className="w-24 h-24 rounded-full mx-auto my-4 border-2 border-blue-400"
       />
       <p className="text-lg">{data.name}</p>
-      <p className="text-gray-400">{data.email}</p>
+      <p className="text-gray-400 text-2xl italic">{data.email}</p>
+
+      <h4>Feel free to generate more tickets. It's free.</h4>
       <button
         onClick={() => window.location.reload()}
         className="mt-4 bg-gray-700 hover:bg-gray-800 p-2 rounded"

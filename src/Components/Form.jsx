@@ -16,11 +16,11 @@ const Form = ({ setTicketData }) => {
     setLoading(true);
     const formData = new FormData();
     formData.append("file", file);
-    formData.append("upload_preset", "Tickethng"); // Replace with Cloudinary preset
+    formData.append("upload_preset", "Tickethng"); 
 
     try {
       const response = await axios.post(
-        "https://api.cloudinary.com/v1_1/donymetdd/image/upload", // Replace YOUR_CLOUD_NAME
+        "https://api.cloudinary.com/v1_1/donymetdd/image/upload", 
         formData
       );
       setAvatar(response.data.secure_url);
@@ -42,7 +42,8 @@ const Form = ({ setTicketData }) => {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-      {/* Avatar Upload */}
+    <p className="text-white text-2xl">Avatar Upload</p>
+    <p className="text-white">You can upload an animate (Any image)</p>
       <div className="flex flex-col items-center">
         {avatar && (
           <img
