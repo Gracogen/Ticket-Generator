@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Form from "./components/Form";
-import Ticket from "./components/Ticket";
+import Form from "./Components/Form";
+import Ticket from "./Components/Ticket";
 import './App.css';
 
 const App = () => {
